@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Dark Maze</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at center, #160000 0%, #070707 45%, #000000 100%);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .warning {
+            color: #777;
+            font-size: 13px;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(55px, 10vw, 110px);
+            letter-spacing: 10px;
+            color: #b00000;
+            text-shadow:
+                0 0 10px #500000,
+                0 0 30px #300000;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: clamp(16px, 3vw, 22px);
+            letter-spacing: 3px;
+            margin-bottom: 45px;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 18px 55px;
+            border: 2px solid #900000;
+            background: #100000;
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: 0.25s;
+            box-shadow: 0 0 20px rgba(120, 0, 0, 0.25);
+        }
+
+        .play-button:hover {
+            background: #700000;
+            color: white;
+            border-color: #ff3333;
+            box-shadow: 0 0 35px rgba(180, 0, 0, 0.6);
+            transform: scale(1.04);
+        }
+
+        .info {
+            margin: 65px auto 0;
+            max-width: 700px;
+            padding: 30px;
+            border: 1px solid #222;
+            background: rgba(10, 10, 10, 0.8);
+        }
+
+        .info h2 {
+            color: #ddd;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+
+        .info p {
+            color: #888;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .control {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .control strong {
+            color: #aaa;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #444;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                letter-spacing: 5px;
+            }
+
+            .play-button {
+                width: 90%;
+                padding: 16px 20px;
+            }
+
+            .info {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="warning">
+            You shouldn't have entered...
+        </div>
+
+        <h1>THE DARK MAZE</h1>
+
+        <div class="subtitle">
+            NIGHTMARE DEPTHS
+        </div>
+
+        <a href="game.html" class="play-button">
+            PLAY NOW
+        </a>
+
+        <section class="info">
+
+            <h2>ENTER THE DARKNESS</h2>
+
+            <p>
+                A maze waits beneath the darkness.
+                Find your way through the depths, survive the nightmare,
+                and discover what is waiting at the end.
+            </p>
+
+            <div class="controls">
+                <div class="control">
+                    <strong>W A S D</strong><br>
+                    Move
+                </div>
+
+                <div class="control">
+                    <strong>MOUSE</strong><br>
+                    Look Around
+                </div>
+
+                <div class="control">
+                    <strong>L</strong><br>
+                    Lighter
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            THE DARK MAZE • NIGHTMARE DEPTHS
+        </footer>
+
+    </main>
+
+</body>
+</html>
